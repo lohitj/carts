@@ -1,5 +1,6 @@
 node {
    
+   def SONAR_SCANNER = tool "SONAR_SCANNER"
    def MAVEN_HOME = tool "MAVEN_HOME"
    def JAVA_HOME = tool "JAVA_HOME"
    def NODEJS_HOME = tool "NODE_PATH"
