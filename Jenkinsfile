@@ -33,20 +33,20 @@ node {
 
 
    stage("Dev - Building Application"){
-         sh 'oc start-build orders --from-dir . --follow'
+         sh 'oc start-build carts --from-dir . --follow'
         //openshiftBuild(buildConfig: 'orders',showBuildLogs: 'true')
    }
 
    stage("Dev - Deploying Application"){
-       openshiftDeploy(deploymentConfig: 'orders')
+       openshiftDeploy(deploymentConfig: 'carts')
    }
    
    stage("Verify Application"){
-       openshiftVerifyService(svcName: 'orders')
+       openshiftVerifyService(svcName: 'carts')
    }
    
    stage("Tagging Image for Production"){
-      openshiftTag(srcStream: 'orders', srcTag: 'latest', destStream: 'orders', destTag: 'prod')
+      openshiftTag(srcStream: 'carts', srcTag: 'latest', destStream: 'orders', destTag: 'prod')
    }
    
    stage("Install Dependencies"){
