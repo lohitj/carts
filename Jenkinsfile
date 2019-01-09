@@ -22,7 +22,7 @@ node {
    
    stage("Code Quality - SonarQube"){
        withSonarQubeEnv {
-           sh "sonar-scanner"
+           sh "mvn org.sonarsource.scanner.maven:sonar-maven-plugin:3.2:sonar"
         }
    }
 
