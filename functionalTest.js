@@ -5,7 +5,7 @@ let expect = chai.expect;
 
 chai.use(chaiHttp);
 
-let url = "http://orders";
+let url = "http://carts";
 
 
 describe("Testing Orders API", () => {  // <= Pass in done callback
