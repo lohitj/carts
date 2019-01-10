@@ -1,0 +1,27 @@
+{
+  "name": "orders",
+  "version": "1.0.0",
+  "description": "[![Build Status](https://travis-ci.org/microservices-demo/orders.svg?branch=master)](https://travis-ci.org/microservices-demo/orders) [![Coverage Status](https://coveralls.io/repos/github/microservices-demo/orders/badge.svg?branch=master)](https://coveralls.io/github/microservices-demo/orders?branch=master)\r [![](https://images.microbadger.com/badges/image/weaveworksdemos/orders.svg)](http://microbadger.com/images/weaveworksdemos/orders \"Get your own image badge on microbadger.com\")",
+  "main": "test.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha functionalTest.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akilans/ms-orders.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akilans/ms-orders/issues"
+  },
+  "homepage": "https://github.com/akilans/ms-orders#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.2.1"
+  }
+}
