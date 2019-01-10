@@ -1,0 +1,15 @@
+config:
+  target: "http://carts"
+  phases:
+    - duration: 1
+      arrivalRate: 1
+  plugins:
+    expect: {}
+scenarios:
+  - name: Get pets
+    flow:
+      - get:
+          url: "/"
+          expect:
+            - statusCode: 200
+            - contentType: json
