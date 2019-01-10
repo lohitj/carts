@@ -46,7 +46,7 @@ node {
    }
    
    stage("Tagging Image for Production"){
-      openshiftTag(srcStream: 'carts', srcTag: 'latest', destStream: 'orders', destTag: 'prod')
+      openshiftTag(srcStream: 'carts', srcTag: 'latest', destStream: 'carts', destTag: 'prod')
    }
    
    stage("Install Dependencies"){
@@ -86,7 +86,7 @@ node {
    */
 
    stage("Prod - Deploying Application"){
-       openshiftDeploy(namespace:'openshiftplus-prod', deploymentConfig: 'orders')
+       openshiftDeploy(namespace:'openshiftplus-prod', deploymentConfig: 'carts')
    }
 
 }
