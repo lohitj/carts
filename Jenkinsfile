@@ -86,7 +86,7 @@ node {
    */
 
    stage("Prod - Deploying Application"){
-       openshiftDeploy(namespace:'openshiftplus-prod', deploymentConfig: 'carts')
+       openshiftDeploy(namespace:'ms-prod-lohit', deploymentConfig: 'carts')
    }
 
 }
